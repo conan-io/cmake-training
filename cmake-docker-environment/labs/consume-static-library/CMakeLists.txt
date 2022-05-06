@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.9.1)
-project(contumerTest)
+project(consumerTest)
 
 add_library(greeting greeting/greeting.cpp)
 target_include_directories(greeting PUBLIC ${CMAKE_CURRENT_LIST_DIR}/greeting/include)
