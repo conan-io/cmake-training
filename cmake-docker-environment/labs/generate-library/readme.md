@@ -41,6 +41,6 @@ For a STATIC library enter:
    ```
 For a SHARED library enter:
    ```
-   $ cmake -D BUILD_SHARED_LIBS=true ..
+   $ cmake -D BUILD_SHARED_LIBS=ON ..
    $ make
    ```

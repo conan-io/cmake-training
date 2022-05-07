@@ -7,7 +7,7 @@ Commands for generating a SHARED library and consume it from an executable. Befo
    
 ## Exercise 1: Generate and consume a STATIC libary, check its size
    ```
-   $ cmake -D BUILD_SHARED_LIBS=true ..
+   $ cmake -D BUILD_SHARED_LIBS=ON ..
    $ make
    $ ./greeting
    ```
@@ -37,7 +37,7 @@ Commands for generating a SHARED library and consume it from an executable. Befo
 **CMakeLists.txt**
    ```
    cmake_minimum_required(VERSION 3.9.1)
-   project(contumerTest)
+   project(consumerTest)
 
    add_library(greeting greeting/greeting.cpp)
    target_include_directories(greeting PUBLIC ${CMAKE_CURRENT_LIST_DIR}/greeting/include)
@@ -45,7 +45,7 @@ Commands for generating a SHARED library and consume it from an executable. Befo
 
 **Command Line**
    ```
-   cmake -D BUILD_SHARED_LIBS=true ..
+   cmake -D BUILD_SHARED_LIBS=ON ..
    make
    ./consumer
    ```

@@ -14,5 +14,5 @@ These are similar to the make-example exercises. You'll see how a single  CMakeL
 Make a slight change to greeting.cpp and build again.
    ```
    $ make
-   $ ./greetingTest
+   $ ./greeting
    ```
