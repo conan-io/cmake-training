@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+    cmake-training:
+        container_name: cmake-training
+        build:
+            dockerfile: Dockerfile
+            context: .
+        command: tail -f /dev/null
+        volumes:
+            - ./labs:/labs
