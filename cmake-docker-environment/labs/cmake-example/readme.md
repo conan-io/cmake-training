@@ -3,16 +3,17 @@ These are similar to the make-example exercises. You'll see how a single  CMakeL
 
 ## Exercise 1: Generate the MakeFile file and build the executable
    ```
-   $ cd cmake-example
-   $ mkdir build && cd build
-   $ cmake ..
-   $ make
-   $ ./greeting
+   cd cmake-example
+   mkdir build && cd build
+   cmake ..
+   make
+   ./greeting
    ```
 
 ## Exercise 2: Examine the flexibility of CMake's MakeFile file
 Make a slight change to greeting.cpp and build again.
    ```
-   $ make
-   $ ./greeting
+   make
+   ./greeting
    ```
+   

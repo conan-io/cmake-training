@@ -1,8 +1,8 @@
 # subdirectory-example
 This project asks you to manage targets that are created in several CMakeLists.txt files across subdirectories. Before you start, change to the proper directory and make the build directory.
    ```
-   $ cd subdirectory-example
-   $ mkdir build && cd build
+   cd subdirectory-example
+   mkdir build && cd build
    ```
    
 ## Exercise 1: Move the thirdDay target functionality into thirdDay/CMakeLists.txt
@@ -47,7 +47,7 @@ Reverse engineer what you need from other files.
 
 Compile and run the executable.
    ```
-   $ cmake ..
-   $ make
-   $ ./song
+   cmake ..
+   make
+   ./song
    ```

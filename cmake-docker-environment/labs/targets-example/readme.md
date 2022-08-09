@@ -1,8 +1,8 @@
 # targets-example
 This project asks you to create targets that have varying visibility of each other. Before you start, change to the proper directory and make the build directory.
    ```
-   $ cd targets-example
-   $ mkdir build && cd build
+   cd targets-example
+   mkdir build && cd build
    ```
    
 ## Exercise 1: Create a song executable that uses the thirdDay
@@ -47,9 +47,9 @@ Modify CMakeLists.txt so that the executable utilizes thirdDay functionality. Re
 
 Run the executable.
    ```
-   $ cmake ..
-   $ make
-   $ ./song
+   cmake ..
+   make
+   ./song
    ```
 
 ## Exercise 2: Change the target_include_directory for the thirdDay target to have PRIVATE and INTERFACE visibility
@@ -71,13 +71,13 @@ Run the executable.
 
 Try compiling and running.
    ```
-   $ cmake ..
-   $ make
-   $ ./song
+   cmake ..
+   make
+   ./song
    ```
 
 ## Exercise 3: Create a dependency graph and convert it to a PNG
    ```
-   $ cmake .. --graphviz=song.dot
-   $ dot -Tpng -o song.png song.dot
+   cmake .. --graphviz=song.dot
+   dot -Tpng -o song.png song.dot
    ```
