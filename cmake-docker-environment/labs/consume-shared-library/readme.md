@@ -1,26 +1,26 @@
 # consume-shared-library
 Commands for generating a SHARED library and consume it from an executable. Before you start, change to the proper directory and make the build directory.
    ```
-   $ cd consume-shared-library
-   $ mkdir build && cd build
+   cd consume-shared-library
+   mkdir build && cd build
    ```
    
 ## Exercise 1: Generate and consume a STATIC libary, check its size
    ```
-   $ cmake -D BUILD_SHARED_LIBS=ON ..
-   $ make
-   $ ./greeting
+   cmake -D BUILD_SHARED_LIBS=ON ..
+   make
+   ./greeting
    ```
 
 ## Exercise 2: Check the size of the executable
    ```
-   $ ls -l greeting
+   ls -l greeting
    ```
 
 ## Exercise 3: Try deleting the library and running the executable
    ```
-   $ rm libgreeting.so
-   $ ./greeting
+   rm libgreeting.so
+   ./greeting
    ```
 
 ## Exercise 4: Change the greeting, rebuild the library, and run the old executable
